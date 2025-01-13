@@ -31,7 +31,7 @@
 </head>
 <body>
   <h1>High School Career Guidance Questionnaire</h1>
-  <form id="careerForm">
+<form id="careerForm" action="https://script.google.com/macros/s/AKfycbzhEunMIXpHrUBT3Cbs0eYNNcPjEAYdkXwAj8hcfpjaGfWmh7ychDQKq8TeZWcMP0tj/exec" method="POST">
     <!-- Section 1 -->
     <div class="question">
       <h2>1. Personal and Academic Background</h2>
@@ -194,23 +194,6 @@
 
   <script>
     // Handle form submission
-    document.getElementById('careerForm').addEventListener('submit', function(event) {
-      event.preventDefault();
-      const formData = new FormData(event.target);
-      const data = {};
-      formData.forEach((value, key) => {
-        if (!data[key]) {
-          data[key] = value;
-        } else if (Array.isArray(data[key])) {
-          data[key].push(value);
-        } else {
-          data[key] = [data[key], value];
-        }
-      });
-
-      console.log(data); // Replace with an API call or GitHub integration
-      alert('Form submitted! Check the console for data.');
-    });
   </script>
 </body>
 </html>
