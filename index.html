@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>High School Career Guidance Questionnaire</title>
-  <style>
+	<head>
+		<title>High School Career Guidance Questionnaire</title>
+		<style>
     body {
       font-family: Arial, sans-serif;
       margin: 20px;
@@ -20,179 +20,179 @@
       display: block;
       margin-bottom: 5px;
     }
-  </style>
-  <script>
+		</style>
+		<script>
     function toggleOtherField(checkboxId, inputId) {
       const checkbox = document.getElementById(checkboxId);
       const inputField = document.getElementById(inputId);
       inputField.style.display = checkbox.checked ? "block" : "none";
     }
-  </script>
-</head>
-<body>
-  <h1>High School Career Guidance Questionnaire</h1>
-<form id="careerForm" onsubmit="handleSubmit(event)">
-    <!-- Section 1 -->
-    <div class="question">
-      <h2>1. Personal and Academic Background</h2>
-      <label>Full Name:</label>
-      <input type="text" name="full_name" required>
+		</script>
+	</head>
+	<body>
+		<h1>High School Career Guidance Questionnaire</h1>
+		<form id="careerForm" onsubmit="handleSubmit(event)">
+			<!-- Section 1 -->
+			<div class="question">
+				<h2>1. Personal and Academic Background</h2>
+				<label>Full Name:</label>
+				<input type="text" name="full_name" required>
 
-      <label>Date of Birth:</label>
-      <input type="date" name="dob" required>
+				<label>Date of Birth:</label>
+				<input type="date" name="dob" required>
 
-      <label>Current Grade and School Name:</label>
-      <input type="text" name="school_name" required>
-    </div>
+				<label>Current Grade and School Name:</label>
+				<input type="text" name="school_name" required>
+			</div>
 
-    <div class="question">
-      <h3>1a. Favorite Subjects in School (Select up to 3):</h3>
-      <label><input type="checkbox" name="subjects" value="Mathematics"> Mathematics</label>
-      <label><input type="checkbox" name="subjects" value="Science"> Science</label>
-      <label><input type="checkbox" name="subjects" value="English"> English</label>
-      <label><input type="checkbox" name="subjects" value="History"> History</label>
-      <label><input type="checkbox" name="subjects" value="Economics"> Economics</label>
-      <label><input type="checkbox" name="subjects" value="Arts"> Arts</label>
-      <label>
-        <input type="checkbox" id="otherCheckbox1" onclick="toggleOtherField('otherCheckbox1', 'otherInput1')"> Other
-      </label>
-      <input type="text" id="otherInput1" name="other_subject" class="hidden" placeholder="Please specify">
-    </div>
+			<div class="question">
+				<h3>1a. Favorite Subjects in School (Select up to 3):</h3>
+				<label><input type="checkbox" name="subjects" value="Mathematics">Mathematics</label>
+					<label><input type="checkbox" name="subjects" value="Science">Science</label>
+						<label><input type="checkbox" name="subjects" value="English">English</label>
+							<label><input type="checkbox" name="subjects" value="History">History</label>
+								<label><input type="checkbox" name="subjects" value="Economics">Economics</label>
+									<label><input type="checkbox" name="subjects" value="Arts">Arts</label>
+										<label>
+											<input type="checkbox" id="otherCheckbox1" onclick="toggleOtherField('otherCheckbox1', 'otherInput1')">Other
+											</label>
+											<input type="text" id="otherInput1" name="other_subject" class="hidden" placeholder="Please specify">
+											</div>
 
-    <!-- Section 2 -->
-    <div class="question">
-      <h2>2. Interests and Passions</h2>
-      <h3>2a. What activities or hobbies do you enjoy outside of school?</h3>
-      <input type="text" name="hobbies">
+											<!-- Section 2 -->
+											<div class="question">
+												<h2>2. Interests and Passions</h2>
+												<h3>2a. What activities or hobbies do you enjoy outside of school?</h3>
+												<input type="text" name="hobbies">
 
-      <h3>2b. Fields or industries you are curious about/passionate about:</h3>
-      <label><input type="checkbox" name="fields" value="Technology"> Technology</label>
-      <label><input type="checkbox" name="fields" value="Healthcare"> Healthcare</label>
-      <label><input type="checkbox" name="fields" value="Business"> Business and Finance</label>
-      <label><input type="checkbox" name="fields" value="Creative Arts"> Creative Arts</label>
-      <label><input type="checkbox" name="fields" value="Engineering"> Engineering</label>
-      <label><input type="checkbox" name="fields" value="Law"> Law and Public Policy</label>
-      <label><input type="checkbox" name="fields" value="Social Work"> Social Work</label>
-      <label>
-        <input type="checkbox" id="otherCheckbox2" onclick="toggleOtherField('otherCheckbox2', 'otherInput2')"> Other
-      </label>
-      <input type="text" id="otherInput2" name="other_field" class="hidden" placeholder="Please specify">
-    </div>
+													<h3>2b. Fields or industries you are curious about/passionate about:</h3>
+													<label><input type="checkbox" name="fields" value="Technology">Technology</label>
+														<label><input type="checkbox" name="fields" value="Healthcare">Healthcare</label>
+															<label><input type="checkbox" name="fields" value="Business">Business and Finance</label>
+																<label><input type="checkbox" name="fields" value="Creative Arts">Creative Arts</label>
+																	<label><input type="checkbox" name="fields" value="Engineering">Engineering</label>
+																		<label><input type="checkbox" name="fields" value="Law">Law and Public Policy</label>
+																			<label><input type="checkbox" name="fields" value="Social Work">Social Work</label>
+																				<label>
+																					<input type="checkbox" id="otherCheckbox2" onclick="toggleOtherField('otherCheckbox2', 'otherInput2')">Other
+																					</label>
+																					<input type="text" id="otherInput2" name="other_field" class="hidden" placeholder="Please specify">
+																					</div>
 
-    <!-- Section 3 -->
-    <div class="question">
-      <h2>3. Academic Preferences</h2>
-      <h3>3a. Preferred type of learning:</h3>
-      <label><input type="radio" name="learning_type" value="Theoretical"> Theoretical</label>
-      <label><input type="radio" name="learning_type" value="Practical"> Practical</label>
-      <label><input type="radio" name="learning_type" value="Balanced"> Balanced</label>
+																					<!-- Section 3 -->
+																					<div class="question">
+																						<h2>3. Academic Preferences</h2>
+																						<h3>3a. Preferred type of learning:</h3>
+																						<label><input type="radio" name="learning_type" value="Theoretical">Theoretical</label>
+																							<label><input type="radio" name="learning_type" value="Practical">Practical</label>
+																								<label><input type="radio" name="learning_type" value="Balanced">Balanced</label>
 
-      <h3>3b. Would you like to continue studying current subjects or explore new areas?</h3>
-      <label><input type="radio" name="study_preference" value="Current Subjects"> Continue with current subjects</label>
-      <label><input type="radio" name="study_preference" value="Explore New Areas"> Explore new areas</label>
-      <label><input type="radio" name="study_preference" value="Both"> A mix of both</label>
-    </div>
+																									<h3>3b. Would you like to continue studying current subjects or explore new areas?</h3>
+																									<label><input type="radio" name="study_preference" value="Current Subjects">Continue with current subjects</label>
+																										<label><input type="radio" name="study_preference" value="Explore New Areas">Explore new areas</label>
+																											<label><input type="radio" name="study_preference" value="Both">A mix of both</label>
+																											</div>
 
-    <!-- Section 4 -->
-    <div class="question">
-      <h2>4. Career Aspirations</h2>
-      <h3>4a. Do you have a dream job or career in mind?</h3>
-      <input type="text" name="dream_job">
+																											<!-- Section 4 -->
+																											<div class="question">
+																												<h2>4. Career Aspirations</h2>
+																												<h3>4a. Do you have a dream job or career in mind?</h3>
+																												<input type="text" name="dream_job">
 
-      <h3>4b. What motivates you most in a career?</h3>
-      <label><input type="checkbox" name="career_motivation" value="High Income"> High income potential</label>
-      <label><input type="checkbox" name="career_motivation" value="Work-Life Balance"> Work-life balance</label>
-      <label><input type="checkbox" name="career_motivation" value="Creativity"> Creativity and innovation</label>
-      <label><input type="checkbox" name="career_motivation" value="Helping Others"> Helping others</label>
-      <label><input type="checkbox" name="career_motivation" value="Leadership"> Leading or managing teams</label>
-      <label>
-        <input type="checkbox" id="otherCheckbox3" onclick="toggleOtherField('otherCheckbox3', 'otherInput3')"> Other
-      </label>
-      <input type="text" id="otherInput3" name="other_motivation" class="hidden" placeholder="Please specify">
-    </div>
+																													<h3>4b. What motivates you most in a career?</h3>
+																													<label><input type="checkbox" name="career_motivation" value="High Income">High income potential</label>
+																														<label><input type="checkbox" name="career_motivation" value="Work-Life Balance">Work-life balance</label>
+																															<label><input type="checkbox" name="career_motivation" value="Creativity">Creativity and innovation</label>
+																																<label><input type="checkbox" name="career_motivation" value="Helping Others">Helping others</label>
+																																	<label><input type="checkbox" name="career_motivation" value="Leadership">Leading or managing teams</label>
+																																		<label>
+																																			<input type="checkbox" id="otherCheckbox3" onclick="toggleOtherField('otherCheckbox3', 'otherInput3')">Other
+																																			</label>
+																																			<input type="text" id="otherInput3" name="other_motivation" class="hidden" placeholder="Please specify">
+																																			</div>
 
-    <!-- Section 5 -->
-    <div class="question">
-      <h2>5. Education Preferences</h2>
-      <h3>5a. Willingness to relocate for education:</h3>
-      <label><input type="radio" name="relocation" value="Yes"> Yes</label>
-      <label><input type="radio" name="relocation" value="No"> No</label>
-      <label><input type="radio" name="relocation" value="Maybe"> Maybe</label>
+																																			<!-- Section 5 -->
+																																			<div class="question">
+																																				<h2>5. Education Preferences</h2>
+																																				<h3>5a. Willingness to relocate for education:</h3>
+																																				<label><input type="radio" name="relocation" value="Yes">Yes</label>
+																																					<label><input type="radio" name="relocation" value="No">No</label>
+																																						<label><input type="radio" name="relocation" value="Maybe">Maybe</label>
 
-      <h3>5b Preferred mode of study:</h3>
-      <label><input type="radio" name="study_mode" value="Full-time"> Full-time</label>
-      <label><input type="radio" name="study_mode" value="Part-time"> Part-time</label>
-      <label><input type="radio" name="study_mode" value="Online"> Online</label>
-      <label><input type="radio" name="study_mode" value="Hybrid"> Hybrid</label>
-    </div>
+																																							<h3>5b Preferred mode of study:</h3>
+																																							<label><input type="radio" name="study_mode" value="Full-time">Full-time</label>
+																																								<label><input type="radio" name="study_mode" value="Part-time">Part-time</label>
+																																									<label><input type="radio" name="study_mode" value="Online">Online</label>
+																																										<label><input type="radio" name="study_mode" value="Hybrid">Hybrid</label>
+																																										</div>
 
-    <!-- Section 6 -->
-    <div class="question">
-      <h2>6. Work-Life Expectations</h2>
-      <h3>6a. Preferred work environment:</h3>
-      <label><input type="checkbox" name="work_environment" value="Office-based"> Office-based</label>
-      <label><input type="checkbox" name="work_environment" value="Remote"> Remote work</label>
-      <label><input type="checkbox" name="work_environment" value="Outdoor"> Outdoor/fieldwork</label>
-      <label><input type="checkbox" name="work_environment" value="Travel"> Travel-based</label>
-      <label><input type="checkbox" name="work_environment" value="Flexible"> Flexible schedule</label>
-    </div>
+																																										<!-- Section 6 -->
+																																										<div class="question">
+																																											<h2>6. Work-Life Expectations</h2>
+																																											<h3>6a. Preferred work environment:</h3>
+																																											<label><input type="checkbox" name="work_environment" value="Office-based">Office-based</label>
+																																												<label><input type="checkbox" name="work_environment" value="Remote">Remote work</label>
+																																													<label><input type="checkbox" name="work_environment" value="Outdoor">Outdoor/fieldwork</label>
+																																														<label><input type="checkbox" name="work_environment" value="Travel">Travel-based</label>
+																																															<label><input type="checkbox" name="work_environment" value="Flexible">Flexible schedule</label>
+																																															</div>
 
-    <!-- Section 7 -->
-    <div class="question">
-      <h2>7. Life Goals and Values</h2>
-      <h3>7a. What are your long-term personal and professional goals?</h3>
-      <input type="text" name="life_goals">
+																																															<!-- Section 7 -->
+																																															<div class="question">
+																																																<h2>7. Life Goals and Values</h2>
+																																																<h3>7a. What are your long-term personal and professional goals?</h3>
+																																																<input type="text" name="life_goals">
 
-      <h3>7b. What values are most important to you in a career?</h3>
-      <label><input type="checkbox" name="career_values" value="Social Impact"> Social impact</label>
-      <label><input type="checkbox" name="career_values" value="Creativity"> Creativity</label>
-      <label><input type="checkbox" name="career_values" value="Independence"> Independence</label>
-      <label><input type="checkbox" name="career_values" value="Financial Stability"> Financial stability</label>
-      <label>
-        <input type="checkbox" id="otherCheckbox4" onclick="toggleOtherField('otherCheckbox4', 'otherInput4')"> Other
-      </label>
-      <input type="text" id="otherInput4" name="other_values" class="hidden" placeholder="Please specify">
-    </div>
+																																																	<h3>7b. What values are most important to you in a career?</h3>
+																																																	<label><input type="checkbox" name="career_values" value="Social Impact">Social impact</label>
+																																																		<label><input type="checkbox" name="career_values" value="Creativity">Creativity</label>
+																																																			<label><input type="checkbox" name="career_values" value="Independence">Independence</label>
+																																																				<label><input type="checkbox" name="career_values" value="Financial Stability">Financial stability</label>
+																																																					<label>
+																																																						<input type="checkbox" id="otherCheckbox4" onclick="toggleOtherField('otherCheckbox4', 'otherInput4')">Other
+																																																						</label>
+																																																						<input type="text" id="otherInput4" name="other_values" class="hidden" placeholder="Please specify">
+																																																						</div>
 
-    <!-- Section 8 -->
-    <div class="question">
-      <h2>8. Financial Considerations</h2>
-      <h3>8a. Do you have a budget for higher education?</h3>
-      <input type="text" name="education_budget">
+																																																						<!-- Section 8 -->
+																																																						<div class="question">
+																																																							<h2>8. Financial Considerations</h2>
+																																																							<h3>8a. Do you have a budget for higher education?</h3>
+																																																							<input type="text" name="education_budget">
 
-      <h3>8b. Are you planning to work part-time during your studies?</h3>
-      <label><input type="radio" name="part_time_work" value="Yes"> Yes</label>
-      <label><input type="radio" name="part_time_work" value="No"> No</label>
-      <label><input type="radio" name="part_time_work" value="Undecided"> Undecided</label>
-    </div>
+																																																								<h3>8b. Are you planning to work part-time during your studies?</h3>
+																																																								<label><input type="radio" name="part_time_work" value="Yes">Yes</label>
+																																																									<label><input type="radio" name="part_time_work" value="No">No</label>
+																																																										<label><input type="radio" name="part_time_work" value="Undecided">Undecided</label>
+																																																										</div>
 
-    <!-- Section 9 -->
-    <div class="question">
-      <h2>9. Support System</h2>
-      <h3>9a. Who supports or advises you in making decisions about your future?</h3>
-      <label><input type="checkbox" name="support" value="Family"> Family</label>
-      <label><input type="checkbox" name="support" value="Teachers"> Teachers/mentors</label>
-      <label><input type="checkbox" name="support" value="Friends"> Friends</label>
-      <label>
-        <input type="checkbox" id="otherCheckbox5" onclick="toggleOtherField('otherCheckbox5', 'otherInput5')"> Other
-      </label>
-      <input type="text" id="otherInput5" name="other_support" class="hidden" placeholder="Please specify">
-    </div>
+																																																										<!-- Section 9 -->
+																																																										<div class="question">
+																																																											<h2>9. Support System</h2>
+																																																											<h3>9a. Who supports or advises you in making decisions about your future?</h3>
+																																																											<label><input type="checkbox" name="support" value="Family">Family</label>
+																																																												<label><input type="checkbox" name="support" value="Teachers">Teachers/mentors</label>
+																																																													<label><input type="checkbox" name="support" value="Friends">Friends</label>
+																																																														<label>
+																																																															<input type="checkbox" id="otherCheckbox5" onclick="toggleOtherField('otherCheckbox5', 'otherInput5')">Other
+																																																															</label>
+																																																															<input type="text" id="otherInput5" name="other_support" class="hidden" placeholder="Please specify">
+																																																															</div>
 
-    <!-- Section 10 -->
-    <div class="question">
-      <h2>10. Additional Questions</h2>
-      <h3>10a. Are there specific programs, careers, or degrees you have already considered?</h3>
-      <input type="text" name="specific_programs">
+																																																															<!-- Section 10 -->
+																																																															<div class="question">
+																																																																<h2>10. Additional Questions</h2>
+																																																																<h3>10a. Are there specific programs, careers, or degrees you have already considered?</h3>
+																																																																<input type="text" name="specific_programs">
 
-      <h3>10b. Do you have any constraints or concerns that should be considered in planning your future?</h3>
-      <input type="text" name="constraints">
-    </div>
+																																																																	<h3>10b. Do you have any constraints or concerns that should be considered in planning your future?</h3>
+																																																																	<input type="text" name="constraints">
+																																																																	</div>
 
-    <button type="submit">Submit</button>
-  </form>
+																																																																	<button type="submit">Submit</button>
+																																																																</form>
 
-  <script>
+																																																																<script>
     // Handle form submission
   async function handleSubmit(event) {
   event.preventDefault();
@@ -226,6 +226,6 @@
     alert("An error occurred while submitting the form.");
   }
 }
-  </script>
-</body>
-</html>
+																																																																</script>
+																																																															</body>
+																																																														</html>
